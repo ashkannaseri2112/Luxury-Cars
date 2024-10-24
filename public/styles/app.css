@@ -581,13 +581,39 @@ a {
 }
 
 @font-face {
-  font-family:"Helvetica";
+  font-family:"Helvetica-Bold";
 
   src: local("Helvetica-Bold"),url('/public/Fonts/Helvetica-Bold.ttf');
 }
 
 @font-face {
-  font-family: ;
+  font-family:"Helvetica-Light";
 
-  src: url();
+  src: local("Helvetica-Light"),url('/public/Fonts/helvetica-light.ttf');
+}
+
+@font-face {
+  font-family:"Roboto";
+
+  src: local("Roboto-Medium"),url('/public/Fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family:"Roboto-Regular";
+
+  src: local("Roboto-Regular"),url('/public/Fonts/Roboto-Regular.ttf');
+}
+
+.font-Roboto {
+  font-family: Roboto;
+}
+
+.text-blue-850 {
+  --tw-text-opacity: 1;
+  color: rgb(33 64 142 / var(--tw-text-opacity));
+}
+
+.text-yellow-850 {
+  --tw-text-opacity: 1;
+  color: rgb(241 188 0 / var(--tw-text-opacity));
 }
