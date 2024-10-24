@@ -8,6 +8,13 @@ module.exports = {
         DEFAULT: "1.5rem",
         sm:"1rem",
         lg:"1.25rem"
+      },
+      fontSize: {
+        h2:"45px",
+        h3:"39px",
+        h4:"28px",
+        a:"22px",
+        p:"20px",
       }
     },
     screens:{
@@ -18,6 +25,15 @@ module.exports = {
       },
   },
   plugins: [
+    function({addBase,theme}){
+      addBase({
+        h2: { fontSize: theme("fontSize.h2") },
+        h3: { fontSize: theme("fontSize.h3") },
+        h4: { fontSize: theme("fontSize.p") },
+        p: { fontSize: theme("fontSize.p") },
+        a: { fontSize: theme("fontSize.a") },
+      });
+    },
     function ({ addVariant }) {
       addVariant("child", "& > *");
       addVariant("child-hover", "& > *:hover");
