@@ -586,6 +586,8 @@ a {
   src: local("Helvetica-Bold"),url('/public/Fonts/Helvetica-Bold.ttf');
 }
 
-.font-Helvetica {
-  font-family: Helvetica;
+@font-face {
+  font-family: ;
+
+  src: url();
 }
