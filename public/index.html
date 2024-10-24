@@ -3,15 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="">
-    <link rel="shortcut icon" href="/public/images/car-svgrepo-com.svg" type="svg">
+    <base href="" />
+    <link
+      rel="shortcut icon"
+      href="/public/images/car-svgrepo-com.svg"
+      type="svg"
+    />
     <link rel="stylesheet" href="/public/styles/app.css" />
     <script src="/public/scripts/script.js" async defer></script>
     <title>Luxury Cars</title>
   </head>
-  <body class="font-Roboto">
-     <header>
-          
-     </header>
+  <body class="font-RobotoRegular">
+    <svg class="hidden">
+      <symbol
+        id="user-circle"
+        width="34"
+        height="34"
+        viewBox="0 0 34 34"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17 0.333374C7.80004 0.333374 0.333374 7.80004 0.333374 17C0.333374 26.2 7.80004 33.6667 17 33.6667C26.2 33.6667 33.6667 26.2 33.6667 17C33.6667 7.80004 26.2 0.333374 17 0.333374ZM17 5.33337C19.7667 5.33337 22 7.56671 22 10.3334C22 13.1 19.7667 15.3334 17 15.3334C14.2334 15.3334 12 13.1 12 10.3334C12 7.56671 14.2334 5.33337 17 5.33337ZM17 29C12.8334 29 9.15004 26.8667 7.00004 23.6334C7.05004 20.3167 13.6667 18.5 17 18.5C20.3167 18.5 26.95 20.3167 27 23.6334C24.85 26.8667 21.1667 29 17 29Z"
+          fill="#F1BC00"
+        />
+      </symbol>
+    </svg>
+    <header class="pt-10 pb-16">
+      <div class="container">
+        <!-- Desktop Header -->
+        <div class="hidden sm:flex justify-between items-center relative ">
+          <h5 class="text-[24px] cursor-default">Luxury Cars</h5>
+          <div class="flex  lg:gap-x-32">
+            <ul class="flex gap-x-10 flex-wrap">
+              <li class="header-Item"><a class="text-[18px] lg:text-[22px]" href="#">Home</a></li>
+              <li class="header-Item"><a class="text-[18px] lg:text-[22px]" href="#">Services</a></li>
+              <li class="header-Item"><a class="text-[18px] lg:text-[22px]" href="#">BLog</a></li>
+              <li class="header-Item"><a class="text-[18px] lg:text-[22px]" href="#">Contact Us</a></li>
+            </ul>
+            <a class=" gap-x-3 hidden lg:flex" href="#">
+              <svg class="w-[34px] h-[34px]   text-white">
+                <use href="#user-circle"></use>
+              </svg>
+              Sign In
+            </a>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </header>
   </body>
 </html>

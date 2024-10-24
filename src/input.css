@@ -3,25 +3,38 @@
 @tailwind utilities;
 @tailwind variants;
 
-@layer base{
-    @font-face {
-        font-family:"Helvetica";
-        src: local("Helvetica"),url('/public/Fonts/Helvetica.ttf');
-    }
-    @font-face {
-        font-family:"Helvetica-Bold";
-        src: local("Helvetica-Bold"),url('/public/Fonts/Helvetica-Bold.ttf');
-    }
-    @font-face {
-        font-family:"Helvetica-Light";
-        src: local("Helvetica-Light"),url('/public/Fonts/helvetica-light.ttf');
-    }
-    @font-face {
-        font-family:"Roboto";
-        src: local("Roboto-Medium"),url('/public/Fonts/Roboto-Medium.ttf');
-    }
-    @font-face {
-        font-family:"Roboto-Regular";
-        src: local("Roboto-Regular"),url('/public/Fonts/Roboto-Regular.ttf');
-    }
+@layer base {
+  @font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica"), url("/public/Fonts/Helvetica.ttf");
+  }
+  @font-face {
+    font-family: "Helvetica-Bold";
+    src: local("Helvetica-Bold"), url("/public/Fonts/Helvetica-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Helvetica-Light";
+    src: local("Helvetica-Light"), url("/public/Fonts/helvetica-light.ttf");
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: local("Roboto-Medium"), url("/public/Fonts/Roboto-Medium.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: local("Roboto-Regular"), url("/public/Fonts/Roboto-Regular.ttf");
+  }
+}
+
+@layer components {
+  .header-Item {
+    @apply relative transition-all;
+  }
+  .header-Item::after{
+    content: "";
+    @apply transition-all opacity-0 absolute w-full h-0.5 -bottom-1 left-0 bg-yellow-850;
+  }
+  .header-Item.active::after {
+    @apply opacity-100; 
+  }
 }
