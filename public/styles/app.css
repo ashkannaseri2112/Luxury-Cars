@@ -670,6 +670,11 @@ a {
   position: relative;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -682,8 +687,24 @@ a {
   height: 34px;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
 .w-\[34px\] {
   width: 34px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .cursor-default {
@@ -729,6 +750,11 @@ a {
 .gap-x-16 {
   -moz-column-gap: 4rem;
        column-gap: 4rem;
+}
+
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .py-10 {
