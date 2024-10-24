@@ -15,6 +15,10 @@ module.exports = {
         h4:"28px",
         a:"22px",
         p:"20px",
+      },
+      fontFamily:{
+        Helvetica:"Helvetica",
+        HelveticaBold : "Helvetica-Bold"
       }
     },
     screens:{

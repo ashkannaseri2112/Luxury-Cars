@@ -573,3 +573,19 @@ p {
 a {
   font-size: 22px;
 }
+
+@font-face {
+  font-family:"Helvetica";
+
+  src: local("Helvetica"),url('/public/Fonts/Helvetica.ttf');
+}
+
+@font-face {
+  font-family:"Helvetica";
+
+  src: local("Helvetica-Bold"),url('/public/Fonts/Helvetica-Bold.ttf');
+}
+
+.font-Helvetica {
+  font-family: Helvetica;
+}

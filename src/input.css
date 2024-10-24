@@ -6,6 +6,14 @@
 @layer base{
     @font-face {
         font-family:"Helvetica";
+        src: local("Helvetica"),url('/public/Fonts/Helvetica.ttf');
+    }
+    @font-face {
+        font-family:"Helvetica";
+        src: local("Helvetica-Bold"),url('/public/Fonts/Helvetica-Bold.ttf');
+    }
+    @font-face {
+        font-family: ;
         src: url();
     }
 }
