@@ -666,6 +666,14 @@ a {
   opacity: 1;
 }
 
+.separator {
+  left: 0px;
+  height: 1px;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .absolute {
   position: absolute;
 }
@@ -687,6 +695,10 @@ a {
   margin-right: auto;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -695,60 +707,41 @@ a {
   display: none;
 }
 
-.h-56 {
-  height: 14rem;
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-\[34px\] {
   height: 34px;
 }
 
-.h-44 {
-  height: 11rem;
-}
-
-.h-48 {
-  height: 12rem;
-}
-
 .h-full {
   height: 100%;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
-.w-\[34px\] {
-  width: 34px;
-}
-
-.w-48 {
-  width: 12rem;
-}
-
-.w-\[160px\] {
-  width: 160px;
-}
-
-.w-\[250px\] {
-  width: 250px;
-}
-
-.w-\[350px\] {
-  width: 350px;
-}
-
-.w-\[300px\] {
-  width: 300px;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-\[280px\] {
   width: 280px;
 }
 
+.w-\[34px\] {
+  width: 34px;
+}
+
 .cursor-default {
   cursor: default;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -773,19 +766,21 @@ a {
        column-gap: 0.75rem;
 }
 
-.bg-slate-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 
-.bg-blue-850 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 64 142 / var(--tw-bg-opacity));
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .pb-16 {
@@ -808,14 +803,36 @@ a {
   font-size: 24px;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.contain-none {
+  contain: none;
+}
+
+.child\:child\:capitalize > * > * {
+  text-transform: capitalize;
+}
+
 @media (min-width: 640px) {
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 }
 

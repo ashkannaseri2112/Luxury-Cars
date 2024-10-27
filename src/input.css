@@ -37,4 +37,7 @@
   .header-Item.active::after {
     @apply opacity-100; 
   }
+  .separator{
+    @apply w-full bg-white h-[1px] 
+  }
 }
