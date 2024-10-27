@@ -667,7 +667,6 @@ a {
 }
 
 .separator {
-  left: 0px;
   height: 1px;
   width: 100%;
   --tw-bg-opacity: 1;
@@ -816,10 +815,6 @@ a {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.contain-none {
-  contain: none;
 }
 
 .child\:child\:capitalize > * > * {
