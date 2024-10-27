@@ -37,7 +37,13 @@
   .header-Item.active::after {
     @apply opacity-100; 
   }
+  .navList_Item{
+    @apply transition-all
+  }
+  .navList_Item.active{
+    @apply text-yellow-400 ml-6
+  }
   .separator{
-    @apply w-full bg-white h-[1px] 
+    @apply w-full bg-white/50 h-[1px] absolute ;
   }
 }
