@@ -647,7 +647,7 @@ a {
   transition-duration: 150ms;
 }
 
-.header-Item::after{
+.header-Item::after {
   content: "";
   position: absolute;
   bottom: -0.25rem;
@@ -685,6 +685,48 @@ a {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+#menu-btn {
+  position: relative;
+  display: flex;
+  height: 24px;
+  width: 1.75rem;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-Btn {
+  position: relative;
+  height: 0.25rem;
+  width: 1.75rem;
+  cursor: pointer;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 188 0 / var(--tw-bg-opacity));
+}
+
+#nav-Btn::before,
+  #nav-Btn::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  height: 0.25rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 188 0 / var(--tw-bg-opacity));
+}
+
+#nav-Btn::before {
+  top: 8px;
+}
+
+#nav-Btn::after {
+  top: -8px;
+}
+
 .absolute {
   position: absolute;
 }
@@ -710,8 +752,8 @@ a {
   margin-bottom: 3rem;
 }
 
-.mt-7 {
-  margin-top: 1.75rem;
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .flex {
@@ -785,6 +827,10 @@ a {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
@@ -819,9 +865,9 @@ a {
   line-height: 1.75rem;
 }
 
-.text-slate-700 {
+.text-slate-200 {
   --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 .text-white {

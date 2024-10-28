@@ -12,7 +12,7 @@
     <script src="/public/scripts/script.js" async defer></script>
     <title>Luxury Cars</title>
   </head>
-  <body class="font-RobotoRegular">
+  <body class="font-RobotoRegular overflow-x-hidden">
     <svg class="hidden">
       <symbol
         id="user-circle"
@@ -73,55 +73,63 @@
         </div>
       </div>
          <!-- Desktop Mobile -->
-              <div
-              class="absolute overflow-hidden sm:hidden left-0 w-[280px] h-full top-0 mx-auto bg-gray-400 "
-            >
-              <div class="nav-Header flex  justify-between p-5 mb-12">
-                <h3 class="text-slate-700 mt-7">Luxury Cars</h3>
-                <svg class="w-6 h-6 text-white closeNav-btn">
-                  <use href="#x-mark"></use>
-                </svg>
-              </div>
-              <ul
-                class="flex flex-col text-white child:child:capitalize "
-              >
-                <li class="flex flex-col"> 
-                  <div class="separator"></div>
-                  <a class="text-lg navList_Item p-5" href="#"
-                    >
-                    home</a
-                  >
-                </li>
-                <li class="flex flex-col">
-                  <div class="separator"></div>
-                  <a class="text-lg navList_Item p-5 "  href="#"
-                    >
-                    Services</a
-                  >
-                </li>
-                <li class="flex flex-col">
-                  <div class="separator"></div>
-                  <a class="text-lg navList_Item p-5" href="#"
-                    >
-                    blog</a
-                  >
-                </li>
-                <li class="flex flex-col">
-                  <div class="separator"></div>
-                  <a class="text-lg navList_Item p-5" href="#"
-                    >
-                    Contact us</a
-                  >
-                </li>
-                <li class="flex flex-col">
-                  <div class="separator"></div>
-                  <a class="text-lg navList_Item p-5" href="#"
-                    >
-                    sign in</a
-                  >
-                </li>
-              </ul>
+          <div class="container">
+            <div class="flex justify-between items-center">
+              <h4>Luxury Cars</h4>
+                <div id="menu-btn">
+                   <p id="nav-Btn"></p>
+                </div>
             </div>
+            <div
+            class="absolute hidden overflow-hidden sm:hidden left-0 w-[280px] h-full top-0 mx-auto bg-gray-400 "
+          >
+            <div class="nav-Header flex  justify-between p-5 mb-12">
+              <h3 class="text-slate-200 mt-12">Luxury Cars</h3>
+              <svg class="w-6 h-6 text-white closeNav-btn">
+                <use href="#x-mark"></use>
+              </svg>
+            </div>
+            <ul
+              class="flex flex-col text-white child:child:capitalize "
+            >
+              <li class="flex flex-col"> 
+                <div class="separator"></div>
+                <a class="text-lg navList_Item p-5" href="#"
+                  >
+                  home</a
+                >
+              </li>
+              <li class="flex flex-col">
+                <div class="separator"></div>
+                <a class="text-lg navList_Item p-5 "  href="#"
+                  >
+                  Services</a
+                >
+              </li>
+              <li class="flex flex-col">
+                <div class="separator"></div>
+                <a class="text-lg navList_Item p-5" href="#"
+                  >
+                  blog</a
+                >
+              </li>
+              <li class="flex flex-col">
+                <div class="separator"></div>
+                <a class="text-lg navList_Item p-5" href="#"
+                  >
+                  Contact us</a
+                >
+              </li>
+              <li class="flex flex-col">
+                <div class="separator"></div>
+                <a class="text-lg navList_Item p-5" href="#"
+                  >
+                  sign in</a
+                >
+              </li>
+            </ul>
+           </div>
+          </div>
     </header>
     <div class="overlay"></div>
   </body>

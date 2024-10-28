@@ -30,20 +30,37 @@
   .header-Item {
     @apply relative transition-all;
   }
-  .header-Item::after{
+  .header-Item::after {
     content: "";
     @apply transition-all opacity-0 absolute w-full h-0.5 -bottom-1 left-0 bg-yellow-850;
   }
   .header-Item.active::after {
-    @apply opacity-100; 
+    @apply opacity-100;
   }
-  .navList_Item{
-    @apply transition-all
+  .navList_Item {
+    @apply transition-all;
   }
-  .navList_Item.active{
-    @apply text-yellow-400 ml-6
+  .navList_Item.active {
+    @apply text-yellow-400 ml-6;
   }
-  .separator{
-    @apply w-full bg-white/50 h-[1px] absolute ;
+  .separator {
+    @apply w-full bg-white/50 h-[1px] absolute;
+  }
+  #menu-btn {
+    @apply w-7 h-[24px] flex flex-col justify-center items-center cursor-pointer relative;
+  }
+  #nav-Btn {
+    @apply w-7 cursor-pointer bg-yellow-850 h-1 rounded-full relative;
+  }
+  #nav-Btn::before,
+  #nav-Btn::after {
+    content: "";
+    @apply absolute w-full h-1 bg-yellow-850 rounded-full pointer-events-none cursor-pointer;
+  }
+  #nav-Btn::before {
+    @apply top-[8px];
+  }
+  #nav-Btn::after {
+    @apply -top-[8px];
   }
 }
