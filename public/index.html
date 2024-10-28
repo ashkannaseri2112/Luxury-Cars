@@ -72,20 +72,19 @@
           </div>
         </div>
       </div>
-         <!-- Desktop Mobile -->
+         <!-- Desktop Mobile --> 
           <div class="container">
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center sm:hidden">
               <h4>Luxury Cars</h4>
                 <div id="menu-btn">
                    <p id="nav-Btn"></p>
                 </div>
             </div>
-            <div
-            class="absolute hidden overflow-hidden sm:hidden left-0 w-[280px] h-full top-0 mx-auto bg-gray-400 "
-          >
+            <div id="nav-Menu"
+            class="absolute z-20 overflow-hidden sm:hidden -left-[280px] transition-all w-[280px] h-full top-0 mx-auto bg-gray-400 ">
             <div class="nav-Header flex  justify-between p-5 mb-12">
               <h3 class="text-slate-200 mt-12">Luxury Cars</h3>
-              <svg class="w-6 h-6 text-white closeNav-btn">
+              <svg onclick="closeNavBtn()" class="w-6 h-6 text-white closeNav-btn">
                 <use href="#x-mark"></use>
               </svg>
             </div>
@@ -131,6 +130,6 @@
            </div>
           </div>
     </header>
-    <div class="overlay"></div>
+    <div id="overlay" class="hidden"></div>
   </body>
 </html>

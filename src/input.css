@@ -46,21 +46,37 @@
   .separator {
     @apply w-full bg-white/50 h-[1px] absolute;
   }
+  #overlay{
+    @apply w-full h-full bg-black/15 z-10 fixed top-0
+  }
+}
+
+@layer utilities{
   #menu-btn {
     @apply w-7 h-[24px] flex flex-col justify-center items-center cursor-pointer relative;
   }
   #nav-Btn {
-    @apply w-7 cursor-pointer bg-yellow-850 h-1 rounded-full relative;
+    @apply w-7 cursor-pointer bg-yellow-850 h-1 rounded-full relative transition-all;
   }
   #nav-Btn::before,
   #nav-Btn::after {
     content: "";
-    @apply absolute w-full h-1 bg-yellow-850 rounded-full pointer-events-none cursor-pointer;
+    @apply absolute w-full h-1 bg-yellow-850 rounded-full pointer-events-none cursor-pointer transition-all;
   }
   #nav-Btn::before {
-    @apply top-[8px];
+    @apply -top-[8px];
   }
   #nav-Btn::after {
-    @apply -top-[8px];
+    @apply top-[8px];
+  }
+  #nav-Btn.active{
+    transform: rotate(55deg);
+  }
+  #nav-Btn.active::before{
+    opacity: 0;
+  }
+  #nav-Btn.active::after{
+    transform:rotate(70deg);
+    @apply -top-0;
   }
 }

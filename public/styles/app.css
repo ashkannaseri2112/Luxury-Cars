@@ -685,46 +685,13 @@ a {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-#menu-btn {
-  position: relative;
-  display: flex;
-  height: 24px;
-  width: 1.75rem;
-  cursor: pointer;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#nav-Btn {
-  position: relative;
-  height: 0.25rem;
-  width: 1.75rem;
-  cursor: pointer;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 188 0 / var(--tw-bg-opacity));
-}
-
-#nav-Btn::before,
-  #nav-Btn::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  height: 0.25rem;
+#overlay {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  height: 100%;
   width: 100%;
-  cursor: pointer;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 188 0 / var(--tw-bg-opacity));
-}
-
-#nav-Btn::before {
-  top: 8px;
-}
-
-#nav-Btn::after {
-  top: -8px;
+  background-color: rgb(0 0 0 / 0.15);
 }
 
 .absolute {
@@ -735,12 +702,20 @@ a {
   position: relative;
 }
 
+.-left-\[280px\] {
+  left: -280px;
+}
+
 .left-0 {
   left: 0px;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .mx-auto {
@@ -873,6 +848,73 @@ a {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#menu-btn {
+  position: relative;
+  display: flex;
+  height: 24px;
+  width: 1.75rem;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-Btn {
+  position: relative;
+  height: 0.25rem;
+  width: 1.75rem;
+  cursor: pointer;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 188 0 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#nav-Btn::before,
+  #nav-Btn::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  height: 0.25rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 188 0 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#nav-Btn::before {
+  top: -8px;
+}
+
+#nav-Btn::after {
+  top: 8px;
+}
+
+#nav-Btn.active{
+  transform: rotate(55deg);
+}
+
+#nav-Btn.active::before{
+  opacity: 0;
+}
+
+#nav-Btn.active::after{
+  transform:rotate(70deg);
+  top: -0px;
 }
 
 .child\:child\:capitalize > * > * {
