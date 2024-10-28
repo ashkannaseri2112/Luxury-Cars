@@ -1,0 +1,8 @@
+title: "نام پروژه شما"
+description: "توضیح مختصری درباره پروژه شما"
+baseurl: "" # این را خالی بگذارید مگر اینکه از زیرپوشه استفاده کنید
+url: "https://your-username.github.io/your-repo-name" # آدرس سایت خودتان در GitHub Pages
+
+# تنظیمات اضافی برای جلوگیری از نیاز به فایل style.scss
+theme: minima # یا تم دلخواه خودتان
+plugins: []
